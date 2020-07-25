@@ -190,15 +190,14 @@
 
     </section>
 
-    <form class="form-signin">
+    <form class="form-signin" action="/" method="POST">
         <div class="container p-5 ">
             <img class="mb-4 d-block my-0 mx-auto " src="./img/newsletter.png" alt="imagen-newsletter" width="82" height="82">
             <h1 class="h3 mb-3 font-weight-bold text-dark">ENTÉRATE CUANDO SUBAMOS NUEVAS SESIONES</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="text" id="inputPassword" class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu nombre" required>
-            <input type="apellidos" id="inputEmail" class="form-control border-dark p-3 border-bottom-0" placeholder="Apellidos" required autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="email" id="inputPassword" class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu email" required>
+            <input type="text" name="fName"class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu nombre" required>
+            <input type="apellidos" name="lName" class="form-control border-dark p-3 border-bottom-0" placeholder="Apellidos" required autofocus>
+            <input type="email" name="email" class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu email" required>
 
             <button class="btn btn-lg btn-primary btn-block bg-dark border-0 p-3" type="submit">Regístrate</button>
             <p class="mt-5 mb-3 text-dark text-center font-weight-bold">&copy; 2019-2020</p>
