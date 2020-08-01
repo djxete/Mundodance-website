@@ -112,7 +112,7 @@ h1 {
     max-height: 100%;
     color: rgb(0, 161, 201);
     width: 100%;
-    font-size: 60px;
+    font-size: 30px;
     margin: 0 auto;
 
 }
@@ -122,7 +122,7 @@ h1 {
     color: #ffffff;
     margin: 0 auto;
     font-size: 25px;
-    border: 1px dotted rgb(0, 161, 201);
+    /*border: 1px dotted rgb(0, 161, 201);*/
     padding: 5px;
 
 }
@@ -248,8 +248,17 @@ h1 {
     padding: 1.4rem;
     text-align: center;
     font-size: calc(0.5em + 2vw + 1vh);
+    
 }
-
+h3::after{
+    content: "..........";
+    color: rgb(0, 161, 201);
+    position: absolute;
+    left: 42%;
+    width: 50px;
+    bottom: 20%;
+    
+}
 .section {
     position: relative;
     height: 100px;
@@ -262,7 +271,8 @@ h1 {
     color: rgb(0, 161, 201);
     position: absolute;
     top: 60%;
-    left: 52%;
+    /*left: 35%;*/
+    left: calc(0.5em + 2vw + 1vh);
     width: 100px;
     display: block;
     font-size: calc(0.5em + 2vw + 1vh);
@@ -277,7 +287,8 @@ h1 {
     color: rgb(0, 161, 201);
     position: absolute;
     top: 60%;
-    left: 45%;
+    /*left: 35%;*/
+    left: calc(10em + 2vw + 1vh);
     font-size: calc(0.5em + 2vw + 1vh);
 
 }
@@ -479,7 +490,7 @@ h1 {
     padding: 10px;
     border-radius: 10%;
     display: inline-block;
-    width: calc(3em + 3vw);
+    width: calc(5em + 3vw);
     background-color: rgb(0, 161, 201);
     text-decoration: none;
     text-transform: uppercase;
@@ -721,7 +732,7 @@ h1 {
 /* FOOTER */
 
 footer {
-    margin-top: 5em;
+    margin-top: 0.5em;
     height: 210px;
     background-color: rgb(26, 26, 26);
     padding: 20px;
@@ -733,6 +744,7 @@ footer {
     height: 70px;
     justify-content: center;
     align-items: center;
+    
 
 
 }
@@ -746,11 +758,11 @@ footer {
 }
 
 .footer__div-i {
-    height: 100%;
     color: rgb(0, 161, 201);
-    font-size: 60px;
-    margin: 0 auto;
+    font-size: 30px;
+    margin: auto;
     line-height: 1;
+  
 }
 
 .footer__div-p {
@@ -787,6 +799,7 @@ footer {
     font-size: 30px;
     text-transform: uppercase;
     justify-content: space-between;
+    align-items: center;
     width: 60%;
 
 }
@@ -845,7 +858,7 @@ footer {
 
 .header-parallaxQS:before {
     content: "";
-    height: 480px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
@@ -903,11 +916,19 @@ footer {
 
 
 .footerQS {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
     margin-top: 0;
     border-top: 1em solid rgb(0, 161, 201)
 
-
 }
+ 
+.footerQS-div{
+    flex-basis: 33%;
+}
+
+
 
 
 
@@ -998,7 +1019,7 @@ footer {
     max-height: 100%;
     color: rgb(0, 161, 201);
     width: 100%;
-    font-size: 60px;
+    font-size: 30px;
     margin: 0 auto;
 
 }
@@ -1008,7 +1029,6 @@ footer {
     color: #ffffff;
     margin: 0 auto;
     font-size: 25px;
-    border: 1px dotted rgb(0, 161, 201);
     padding: 5px;
 
 }
@@ -1042,8 +1062,9 @@ footer {
 
 .section__sesiones-imgQ {
     filter: brightness(.2);
-    height: 100%;
+    max-height: 100%;
     display: block;
+    
 }
 
 
@@ -1101,8 +1122,6 @@ footer {
     font-size: calc(0.8em + 1vw);
     font-weight: 350;
 
-
-
 }
 
 .section__sesiones2-div-pQ {
@@ -1140,7 +1159,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: calc(40em + 1vw);
+    height: calc(45em + 1vw);
     width: 100%;
     position: relative;
     z-index: 5000;
@@ -1206,9 +1225,6 @@ footer {
 }
 
 
-.footerCT{
-    margin-top:8.75rem;
-}
 
 
 
@@ -1219,6 +1235,7 @@ footer {
 
 
 /*-----------------------------MEDIA QUERIES----------------------------*/
+/* 480,600,768,1024,1500*/
 
 /*--- min-480px ----*/
 
@@ -1257,6 +1274,10 @@ footer {
         display: flex;
         flex-wrap: wrap;
 
+    }
+
+    h3::after{
+        left: 45%;
     }
 
     .section__sesiones {
@@ -1307,7 +1328,10 @@ footer {
         display: block;
         text-align: justify;
     }
-
+    footer {
+        height: 250px;
+        
+    }
 
 
     /* página quienessomos.html*/
@@ -1387,7 +1411,7 @@ footer {
         max-height: 100%;
         color: rgb(0, 161, 201);
         width: 100%;
-        font-size: 60px;
+        font-size: 30px;
         margin: 0 auto;
 
     }
@@ -1600,11 +1624,17 @@ footer {
         background-color: rgba(0, 0, 0, 0.7)
     }
 
+    footer {
+        
+        height: 150px;
+        
+    }
+
 
     .footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        height: 75px;
+       
         justify-content: center;
         align-items: center;
     }
@@ -1636,7 +1666,7 @@ footer {
         .footerQS {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            height: 75px;
+            height: 250px;
             justify-content: center;
             align-items: center;
         }
@@ -1697,7 +1727,7 @@ footer {
     /*---- página contacta.html ------*/
 
     .contacta{
-        height: calc(45em + 1vw);
+        height: calc(50em + 1vw);
     }
 
 
@@ -1739,6 +1769,7 @@ footer {
     .footer__ul {
         width: 100%;
         justify-content: space-evenly;
+        margin: auto;
     }
 
 
@@ -1799,9 +1830,7 @@ footer {
         list-style: none;
         
     }
-
-
-    .header__nav__ul-a {
+    .header__nav__ul-a{
         text-decoration: none;
         list-style: none;
         color: #ffffff;
@@ -1810,8 +1839,19 @@ footer {
         font-size: calc(1em+ 1vw+1vh);
         padding: 1rem;
         
-        
+    }
 
+
+
+    .header__nav__ul-a:hover, .header__nav__ul-aQ:hover {
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: calc(1em+ 1vw+1vh);
+        padding: 1rem;
+        
     }
 
     .header__nav__ul-li:hover {
@@ -1851,7 +1891,9 @@ footer {
     .section__quienes-somos-parte3 {
         display: block;
     }
-
+    h3::after{
+        left: 48%;
+    }
 
 
     .h3 {
@@ -2103,7 +2145,7 @@ footer {
        /*---- página contacta.html ------*/
     
        .contacta{
-        height: calc(49em + 1vw);
+        height: calc(55em + 1vw);
     }
 
 
@@ -2250,6 +2292,7 @@ footer {
     }
     .footerQS {
         grid-template-columns: repeat(7, 1fr);
+        
     }
 
 

@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"> -->
+
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Normalize css -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+
+    <!-- Css Propio -->
     <link rel="stylesheet" href="css/main.css">
+
     <title>MundoDance</title>
+
 </head>
 
 <body>
+
+    <!-- HEADER  -->
+
     <div class="header-parallax">
 
         <header class="header">
 
             <div class="header__grid-icono">
-                <i class="fas fa-compact-disc icono__i"></i>
+                <i class="fas fa-play icono__i"></i>
             </div>
             <div class="header__grid-logo">
                 <p class="logo__p"><span class="logo__p-span">adictos</span> al <span
@@ -59,6 +74,9 @@
     </div> <!-- header-parallax-->
 
 
+    <!-- SECTION QUIENES SOMOS  -->
+
+
     <section class="section__quienes-somos" id="section__quienes-somos">
         <div class="section__quienes-somos-general">
             <div class="section__quienes-somos-parte">
@@ -85,14 +103,12 @@
     </section>
 
 
+    <!-- MAIN DESCARGA SESIONES  -->
+
     <main>
 
         <section class="section">
-            <h3 class="h3 container">sesiones para descargar</h3>
-            <div>
-                <i class="fas fa-eject h3__icono1"></i>
-                <i class="fas fa-eject h3__icono2"></i>
-            </div>
+            <h3 class="h3 container">descargas</h3>
         </section>
 
         <div class="sesiones__general">
@@ -120,7 +136,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container section__sesiones">
+            <section class="section__sesiones">
 
                 <img src="img/djfarru.jpeg" alt="dj farru">
                 <div class="section__sesiones__div">
@@ -144,7 +160,7 @@
                 </div>
 
             </section>
-            <section class="container section__sesiones">
+            <section class="section__sesiones">
 
                 <img src="img/djmorales.jpeg" alt="dj morales">
 
@@ -175,6 +191,8 @@
 
     </main>
 
+    <!-- SECTION CONTRATA A UN DJ  -->
+
     <section class="section__contratadj">
         <div class="section__contratadj-div">
             <div class="section__contratadj-div-div">
@@ -190,42 +208,33 @@
 
     </section>
 
+
+    <!-- SECTION NEWSLETTER  -->
+
     <form class="form-signin" action="/" method="POST">
         <div class="container p-5 ">
-            <img class="mb-4 d-block my-0 mx-auto " src="./img/newsletter.png" alt="imagen-newsletter" width="82" height="82">
+            <img class="mb-4 d-block my-0 mx-auto " src="./img/newsletter.png" alt="imagen-newsletter" width="82"
+                height="82">
             <h1 class="h3 mb-3 font-weight-bold text-dark">ENTÉRATE CUANDO SUBAMOS NUEVAS SESIONES</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="text" name="fName"class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu nombre" required>
-            <input type="apellidos" name="lName" class="form-control border-dark p-3 border-bottom-0" placeholder="Apellidos" required autofocus>
-            <input type="email" name="email" class="form-control border-dark p-3 border-bottom-0"  placeholder="Tu email" required>
+            <input type="text" name="fName" class="form-control border-dark p-3 border-bottom-0" placeholder="Tu nombre"
+                required>
+            <input type="apellidos" name="lName" class="form-control border-dark p-3 border-bottom-0"
+                placeholder="Apellidos" required autofocus>
+            <input type="email" name="email" class="form-control border-dark p-3 border-bottom-0" placeholder="Tu email"
+                required>
 
             <button class="btn btn-lg btn-primary btn-block bg-dark border-0 p-3" type="submit">Regístrate</button>
             <p class="mt-5 mb-3 text-dark text-center font-weight-bold">&copy; 2019-2020</p>
         </div>
     </form>
-    <!-- 
-    <div class="newsletter">
-        <form action="/" method="POST" class="newsletter__form">
-            <h3 class="newsletter__form-h3">¿Quieres estar al día de las nuevas sesiones? Apúntate a nuestra Newsletter
-                y entérate cuando subamos una sesión nueva</h3>
-            
-                <img src="./img/newsletter.png" class="newsletter__form-img"alt="">
-                <input type="text" id="name" value="" class="newsletter__form-input" placeholder="Tu nombre" required>
-               
-                <input type="text" id="surname"class="newsletter__form-input" placeholder="Tus apellidos" required>
-                
-                <input type="email" id="email" class="newsletter__form-input" placeholder="Tu email"required>
-                <button type="submit" class="newsletter__form-button">Suscribirme gratis</button>
-            
-        </form>
-    </div> -->
+
+
+
+    <!-- BLOG  -->
 
     <section class="section">
         <h3 class="h3 container">nuestro blog</h3>
-        <div>
-            <i class="fas fa-eject h3__icono1"></i>
-            <i class="fas fa-eject h3__icono2"></i>
-        </div>
     </section>
 
     <div class="article__general__blog">
@@ -237,8 +246,8 @@
 
                 <h4 class="article__div-h4">el futuro del poky</h4>
                 <p class="article__div-p1">Escrito por <span class="article__div-p1-span">Nacho</span></p>
-                <p class="article__div-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At exercitationem
-                    odio harum commodi possimus illo maiores fuga vero itaque voluptatem dolores.</p>
+                <p class="article__div-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit.</p>
 
             </div>
         </article>
@@ -250,20 +259,20 @@
 
                 <h4 class="article__div-h4">¿ el nuevo remember ?</h4>
                 <p class="article__div-p1">Escrito por <span class="article__div-p1-span">Nacho</span></p>
-                <p class="article__div-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At exercitationem
-                    odio harum commodi possimus illo maiores fuga vero itaque voluptatem dolores.</p>
-
-
+                <p class="article__div-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit.</p>
             </div>
         </article>
 
     </div>
 
 
+    <!-- FOOTER  -->
+
     <footer class="footer">
 
-        <div class="footer__div">
-            <i class="fas fa-compact-disc footer__div-i"></i>
+        <div class="header__grid-icono">
+            <i class="fas fa-play icono__i"></i>
         </div>
 
         <div class="footer__div">
@@ -281,15 +290,10 @@
             </ul>
         </div>
 
-
-
     </footer>
 
 
-
-
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script src="js/all.js"></script>
+    <!-- Javascript -->
     <script src="js/main.js"></script>
 
 
