@@ -53,6 +53,12 @@
 
                 </ul>
             </nav>
+            <div class="enlaces-header">
+                <a href="index.html">Inicio</a>
+                <a href="quienessomos.html">quienes somos</a>
+                <a href="sesiones.html">sesiones</a>
+                <a href="contacta.html">contacta</a>
+            </div>
 
         </header>
 
@@ -70,19 +76,55 @@
 
 
 
-        <form action="" class="form container">
-            <label class="form__label">Nombre:</label>
-            <input type="text" placeholder="Tu nombre" class="form__input">
+        <form action="" id="myForm" class="form container">
 
-            <label class="form__label">Apellidos:</label>
-            <input type="text" placeholder="Tus apellidos" class="form__input">
+            <!--Campo nombre-->
+            <div class="formulario__grupo formulario__grupo-incorrecto" id="grupo__nombre">
+                <label for="nombre" class="form__label">Nombre:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Tu nombre" class="form__input" id="form__label-name" name="nombre">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El nombre solo puede contener letras y espacios en blanco</p>
+            </div>
 
-            <label class="form__label">Email:</label>
-            <input type="email" placeholder="Tu email" class="form__input">
+            <!--Campo apellidos-->
+            <div class="formulario__grupo" id="grupo__apellidos">
+                <label for="apellidos" class="form__label">Apellidos:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" placeholder="Tus apellidos" class="form__input" id="form__label-surname"
+                        name="apellidos">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">Los apellidos solo pueden contener letras y espacios en blanco</p>
+            </div>
 
-            <label for="telefono" class="form__label">Teléfono:</label>
-            <input type="tel" placeholder="Tu teléfono" class="form__input">
 
+            <!--Campo email-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="form__label">Email:</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" placeholder="correo@correo.com" class="form__input" id="form__label-email"
+                        name="correo">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El email solo puede contener letras,números,puntos,guiones y guiones
+                    bajos</p>
+            </div>
+
+
+            <!--Campo teléfono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="form__label">Teléfono móvil:</label>
+                <div class="formulario__grupo-input">
+                    <input type="tel" placeholder="Tu teléfono" class="form__input" id="form__label-telefono"
+                        name="telefono">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números y como máximo 9 números</p>
+            </div>
+
+            <!--Campo tipo de sesión-->
             <label for="sesión" class="form__label">Tipo de sesión</label>
             <select class="form__select">
                 <option value="Remember" class="form__select-option">Remember</option>
@@ -90,8 +132,26 @@
                 <option value="Bumping" class="form__select-option">Bumping</option>
             </select>
 
-            <button type="submit" class="form__btn">Enviar</button>
+            <!--Campo términos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    <p class="formulario__checkbox-p">Acepto los términos y condiciones</p>
+                </label>
+            </div>
 
+            <!--Mensaje error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p class="formulario__mensaje-p"><i class="fas fa-exclamation-triangle"></i><b> Error:</b> Por favor rellene el formulario
+                    correctamente </p>
+
+            </div>
+
+
+            <!--Botón-->
+            <button type="submit" class="form__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
+            <!--Mensaje enviado correctamente-->
 
 
         </form>
@@ -127,8 +187,7 @@
 
 
 
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script src="js/all.js"></script>
+
     <script src="js/main.js"></script>
 
 </body>

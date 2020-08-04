@@ -627,9 +627,9 @@ h3::after{
 
 .article__div2 {
     display: grid;
-    grid-template-rows: 65% 5%;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: 40% 40% ;
+    
+    justify-content: space-between;
     height: 100%;
     text-align: center;
 }
@@ -669,13 +669,13 @@ h3::after{
 }
 
 .article__div-p1 {
-    padding-top: 0.7rem;
+    
     font-size: calc(0.4em + 1vw + 1vh);
 
 }
 
 .article__div-p1-span {
-    color: rgb(0, 161, 201);
+    
     text-transform: cursive;
     font-size: calc(0.4em + 1vw + 1vh);
 
@@ -684,7 +684,9 @@ h3::after{
 .article__div-p2 {
     display: none;
 }
-
+.article__div-p3{
+    color: rgb(0, 161, 201);
+}
 
 /* FOOTER */
 
@@ -1119,7 +1121,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: calc(45em + 1vw);
+    height: calc(90em + 1vw);
     width: 100%;
     position: relative;
     z-index: 5000;
@@ -1154,15 +1156,61 @@ footer {
 .form__label{
     display: block;
     color: #ffffff;
+    cursor: pointer;
     font-size: calc(0.9em + 1vw);
     font-weight: 400;
 
 }
-
+.formulario__grupo-input{
+    position: relative;
+}
 .form__input{
     display: block;
     font-size: calc(0.8em + 1vw);
     padding: calc(0.2em + 1vw);
+    border: 3px solid transparent;
+    border-radius: 3px;
+    transition: .3s ease all ;
+}
+.form__input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+}
+.formulario__validacion-estado{
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    z-index:100;
+    /* opacity: 0; */
+}
+.formulario__input-error{
+    color: red;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+.formulario__checkbox-p{
+    color: #ffffff;
+}
+.formulario__mensaje-p{
+    color: #ffffff;
+    background-color: red;
+    padding: 15px;
+    display: none;
+}
+.formulario__mensaje-p-activo{
+    display: block;
+}
+.formulario__mensaje-exito{
+    color: #119200;
+    font-weight: 500;
+    display: none;
+}
+.formulario__mensaje-exito-activo{
+    display: block;
 }
 
 .form__select{
@@ -1181,12 +1229,30 @@ footer {
     border-radius: 5%;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 
+/* Estilos validación formulario */
 
 
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
 
+.formulario__grupo-incorrecto .form__label{
+    color: red;
+    font-weight: 500;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: red;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .form__input{
+    border: 3px solid red;
+}
 
 
 
@@ -1281,12 +1347,14 @@ footer {
     }
 
     .article__div-p1 {
-        font-size: calc(0.3em + 1vw + 1vh)
+        font-size: calc(0.3em + 1vw + 1vh);
+        margin-bottom:0.2rem;
     }
 
     .article__div-p2 {
         display: block;
         text-align: justify;
+        margin-bottom: 0.1rem;
     }
     footer {
         height: 250px;
@@ -2271,7 +2339,7 @@ footer {
     }
    
     .header__nav__ulQ{
-        grid-template-columns:20% 20% 20% 20%;
+        grid-template-columns:20% 30% 20% 20%;
         column-gap: 1.3rem;
     }
 
@@ -2308,7 +2376,7 @@ footer {
     }
     
     .form__btn{
-        padding: calc(0.1em + 1vw + 1vh);
+        
         width: 60%;
         
     
