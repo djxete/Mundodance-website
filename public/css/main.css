@@ -1121,7 +1121,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: calc(90em + 1vw);
+    height: calc(58em + 1vw + 1vh);
     width: 100%;
     position: relative;
     z-index: 5000;
@@ -1183,7 +1183,7 @@ footer {
     right: 10px;
     top: 14px;
     z-index:100;
-    /* opacity: 0; */
+    opacity: 0; 
 }
 .formulario__input-error{
     color: red;
@@ -1199,18 +1199,25 @@ footer {
     color: #ffffff;
     background-color: red;
     padding: 15px;
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 .formulario__mensaje-p-activo{
     display: block;
 }
 .formulario__mensaje-exito{
+    
     color: #119200;
     font-weight: 500;
-    display: none;
+    /*display: none;*/
+    display: block;
+    
 }
 .formulario__mensaje-exito-activo{
     display: block;
+    color: #119200;
+    font-weight: 500;
+    text-align: center;
 }
 
 .form__select{
@@ -1760,7 +1767,7 @@ footer {
     /*---- página contacta.html ------*/
 
     .contacta{
-        height: calc(50em + 1vw);
+        height: calc(59em + 1vw + 1vh);
     }
 
 
@@ -2178,7 +2185,7 @@ footer {
        /*---- página contacta.html ------*/
     
        .contacta{
-        height: calc(55em + 1vw);
+        height: calc(65em + 1vw + 1vh);
     }
 
 
@@ -2352,7 +2359,7 @@ footer {
     }   
     
      .contacta{
-        height: calc(60em + 1vw);
+        height: calc(72em + 1vw + 1vh);
     }
 
 
