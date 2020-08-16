@@ -11,6 +11,7 @@ img {
 body {
     background-color: rgb(230, 230, 230);
     font-family: 'Roboto', sans-serif;
+    
 
 }
 
@@ -187,6 +188,8 @@ h1 {
 
 }
 
+
+
 .article__text-big-size {
     
     display: block;
@@ -195,11 +198,12 @@ h1 {
     line-height: 1.2em;
     padding: 0em;
     text-align: center;
-    margin: 0em auto;
+    margin: 0.3em auto 0;
     width: 100%;
 
 
 }
+
 
 .article__i {
     display: inline-block;
@@ -254,7 +258,7 @@ h1 {
     font-size: calc(1em + 1vw);
     line-height: 1.8em;
     padding: 0em;
-    margin: em 0 0;
+    margin: 4em 0 0;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -322,7 +326,7 @@ h3::after{
 /*-----SECTION QUIENES SOMOS-------- */
 
 .section__quienes-somos {
-    height: 425px;
+    height: 100%;
     position: relative;
 }
 
@@ -466,7 +470,7 @@ h3::after{
     margin-bottom: 10px; */
 
 
-    font-size: calc(0.8em + 0.6vw);
+    font-size: calc(0.7em + 0.6vw);
     line-height: 1.5;
     padding: 0em;
     margin: 0em;
@@ -478,6 +482,7 @@ h3::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem auto;
 }
 
 .section__sesiones__div-i {
@@ -677,7 +682,7 @@ h3::after{
 .article__div-p1-span {
     
     text-transform: cursive;
-    font-size: calc(0.4em + 1vw + 1vh);
+    font-size: calc(0.2em + 1vw + 1vh);
 
 }
 
@@ -691,7 +696,7 @@ h3::after{
 /* FOOTER */
 
 footer {
-    margin-top: 0.5em;
+    
     height: 210px;
     background-color: rgb(26, 26, 26);
     padding: 20px;
@@ -794,13 +799,14 @@ footer {
     align-items: center;
     z-index: 100000;
     position: relative;
-    height: 100px;
+    height: 300px;
+    margin: auto;
 
 }
 
 
 .header-parallaxQS {
-    height: 405px;
+    height: 300px;
     position: relative;
     background-image: url(../img/header2.jpg);
     background-size: cover;
@@ -817,7 +823,7 @@ footer {
 
 .header-parallaxQS:before {
     content: "";
-    height: 100%;
+    height: 150px;
     background-color: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
@@ -833,10 +839,30 @@ footer {
     text-transform: uppercase;
 }
 
+.article__generalQS {
+    height: 75%;
+    position: relative;
+}
+
+
+.articleQS {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+}
+
 
 .section__quienes-somosQS {
     position: absolute;
-    top: 14%;
+    bottom: 0;
+    left:0;
 
 }
 
@@ -924,7 +950,9 @@ footer {
     align-items: center;
     z-index: 100000;
     position: relative;
-    height: 100px;
+    height: 150px;
+    margin: auto;
+    
 
 }
 
@@ -1010,7 +1038,7 @@ footer {
 }
 
 .section__sesionesQ {
-    height: 12rem;
+    height: 100%;
     position: relative;
     flex-basis: 50%;
 
@@ -1020,12 +1048,14 @@ footer {
 .section__sesiones-divQ {
     width: 100%;
     height: 100%;
+    
 }
 
 .section__sesiones-imgQ {
     filter: brightness(.2);
-    max-height: 100%;
+    height: 100%;
     display: block;
+    width: 100%;
     
 }
 
@@ -1396,6 +1426,7 @@ footer {
         align-items: center;
         z-index: 100000;
         position: relative;
+        margin-top: 30px;
 
     }
 
@@ -1426,6 +1457,11 @@ footer {
         z-index: 0;
 
 
+    }
+
+    .section__quienes-somosQN {
+        height: 450px;
+        margin-bottom: 0;
     }
 
     .header__grid-icono,
@@ -1513,14 +1549,14 @@ footer {
     /*-----SECTION QUIENES SOMOS-------- */
 
     .section__quienes-somos {
-        height: 425px;
+        height: 100%;
         position: relative;
     }
 
     .section__quienes-somos-generalQS {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 85%;
 
 
     }
@@ -1563,7 +1599,7 @@ footer {
 
     .section__quienes-somos-parte2 {
 
-        height: 300px;
+        height: 100%;
         padding: 1px 20px;
         position: relative;
         background-color: rgb(0, 161, 201);
@@ -1639,11 +1675,10 @@ footer {
 
 @media (min-width: 768px) {
 
-    .section__quienes-somos {
-        height: 450px;
-        margin-bottom: 3rem;
+    .section__quienes-somosQN {
+        height: 100%;
+        margin-bottom: 0;
     }
-
     .section__quienes-somos-parte2 {
         clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
         width: 50%;
@@ -1701,11 +1736,13 @@ footer {
         /* página quienessomos.html*/
 
 
-        .section__quienes-somos {
+        .section__quienes-somosQS {
             height: 450px;
-            margin-bottom: 3rem;
+            margin-bottom: 3rem; 
+            top:25%;
         }
-    
+
+       
     .section__quienes-somos-parte-p2QS {
             font-size: calc(0.2em + 1vw + 1vh);
         }
@@ -1719,9 +1756,10 @@ footer {
         .footerQS {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            height: 250px;
+            height: 100%;
             justify-content: center;
             align-items: center;
+            
         }
     
         .footer__ul {
@@ -1809,7 +1847,7 @@ font-size:calc(0.7em + 1vw);
     
     .form__btn{
         padding: calc(0.1em + 1vw + 1vh);
-        width: 30%;
+        width: 50%;
     
     }
     .formulario__mensaje-exito{
@@ -1928,6 +1966,12 @@ font-size:calc(0.7em + 1vw);
 
 
     }
+    .article__text-big-size{
+        margin: 1em auto 0;
+    }
+    .article__text-medium-size{
+        margin: 0;
+    } 
 
     .section__quienes-somos {
         height: 100%;
@@ -2029,7 +2073,11 @@ font-size:calc(0.7em + 1vw);
 
     /*página quienessomos.html */
 
-
+    .article__generalQS {
+        height: 100%;
+        position: relative;
+    }
+    
     .section__quienes-somos-generalQS {
         width: 100%;
 
@@ -2037,24 +2085,26 @@ font-size:calc(0.7em + 1vw);
 
 
     .header-parallaxQS {
-        height: 600px;
+       
         border-bottom: 1em solid rgb(0, 161, 201);
+        margin: auto;
 
     }
 
     .header-parallaxQS::before {
-        height: 600px;
+        height:100%;
     }
 
     .headerQS {
 
         grid-template-columns: repeat(7, 1fr);
         justify-content: space-evenly;
-
+        margin: auto;
+        height:100%;
     }
 
     .section__quienes-somosQS {
-        height: 100%;
+        height: 85%;
 
     }
 
@@ -2241,7 +2291,7 @@ font-size:calc(0.7em + 1vw);
     }
     .form__btn{
         padding: calc(0.1em + 1vw + 1vh);
-        width: 25%;
+        width: 50%;
         
     
     }
@@ -2346,6 +2396,11 @@ font-size:calc(0.7em + 1vw);
 
     /*página quienessomos.html */
 
+    .article__generalQS {
+        height: 100%;
+        position: relative;
+    }
+    
 
     .section__quienes-somos-generalQS {
         width: 80%;
@@ -2454,4 +2509,10 @@ font-size:calc(0.7em + 1vw);
     line-height: 1em;
     padding: 1em;
     margin: 1em;
+}
+
+/* Estilo formulario php */
+
+.error{
+    color: red;
 }

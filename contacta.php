@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,11 +23,33 @@
     <!-- Css Propio -->
     <link rel="stylesheet" href="css/main.css">
 
+ 
+    
+    
+
     <title>MundoDance</title>
+
+   
 
 </head>
 
 <body>
+
+ <?php
+
+if(isset($_POST['submit'])){
+
+
+$nombre = $_POST["nombre"];
+$apellidos = $_POST["apellidos"];
+$correo = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$terminos = $_POST["terminos"];
+
+
+}
+
+?> 
     <div class="header-parallaxQ">
 
         <header class="headerQ">
@@ -48,7 +72,7 @@
                             class="header__nav__ul-aQ">quienes somos</a></li>
                     <li class="header__nav__ul-liQ"><a href="sesiones.html" target="e_blank"
                             class="header__nav__ul-aQ">sesiones</a></li>
-                    <li class="header__nav__ul-liQ"><a href="contacta.html" target="e_blank"
+                    <li class="header__nav__ul-liQ"><a href="contacta.php" target="e_blank"
                             class="header__nav__ul-aQ">contacta</a></li>
 
                 </ul>
@@ -74,14 +98,15 @@
 
     <main class="contacta">
 
-        
-        <form action="registrar.php" id="myForm" class="form container" method="POST" onsubmit="return comprobarDatosFormulario()">
+    <!-- action="registrar.php" -->
+        <form  id="myForm" action="validarformulario.php" class="form container" 
+        method="POST">
 
             <!--Campo nombre-->
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="form__label">Nombre:</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" placeholder="Tu nombre" class="form__input" id="form__label-name" name="nombre">
+                    <input type="text" placeholder="Tu nombre" class="form__input" id="form__label-name" name="nombre" value="<?php if(isset($nombre)) echo $nombre ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">El nombre solo puede contener letras,espacios en blanco y como mínimo 4 caracteres</p>
@@ -92,7 +117,7 @@
                 <label for="apellidos" class="form__label">Apellidos:</label>
                 <div class="formulario__grupo-input">
                     <input type="text" placeholder="Tus apellidos" class="form__input" id="form__label-surname"
-                        name="apellidos">
+                        name="apellidos" value="<?php if(isset($apellidos)) echo $apellidos ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">Los apellidos solo pueden contener letras y espacios en blanco</p>
@@ -103,8 +128,8 @@
             <div class="formulario__grupo" id="grupo__correo">
                 <label for="correo" class="form__label">Email:</label>
                 <div class="formulario__grupo-input">
-                    <input type="email" placeholder="correo@correo.com" class="form__input" id="form__label-email"
-                        name="correo">
+                    <input type="text" placeholder="correo@correo.com" class="form__input" id="form__label-email"
+                        name="correo" value="<?php if(isset($correo)) echo $correo ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">El email solo puede contener letras,números,puntos,guiones y guiones
@@ -117,7 +142,7 @@
                 <label for="telefono" class="form__label">Teléfono móvil:</label>
                 <div class="formulario__grupo-input">
                     <input type="tel" placeholder="Tu teléfono" class="form__input" id="form__label-telefono"
-                        name="telefono">
+                        name="telefono" value="<?php if(isset($telefono)) echo $telefono ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">El teléfono solo puede contener números y como máximo 9 números</p>
@@ -134,7 +159,7 @@
             <!--Campo términos y condiciones-->
             <div class="formulario__grupo" id="grupo__terminos">
                 <label class="formulario__label">
-                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" value="1">
                     <p class="formulario__checkbox-p">Acepto los términos y condiciones</p>
                 </label>
             </div>
@@ -148,16 +173,16 @@
             
             
             <!--Botón-->
-            <button type="submit" class="form__btn">Enviar</button>
+            <button type="submit" class="form__btn" name="submit">Enviar</button>
             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
             <!--Mensaje enviado correctamente-->
-            
+
             
             </form>
             
             
-            
 
+            
 
 
     </main>
@@ -186,8 +211,6 @@
         </div>
 
     </footer>
-
-
 
 
 
