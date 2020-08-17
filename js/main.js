@@ -1,8 +1,5 @@
 // Menu desplegable
 
-
-
-
 let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
 let nav1 = document.querySelectorAll(".navigation__i")[0];
 let nav2 = document.querySelectorAll(".navigation__iQ")[0];
@@ -12,6 +9,14 @@ let nav2 = document.querySelectorAll(".navigation__iQ")[0];
     enlacesHeader.classList.toggle("menudos");
 });
 
+
+
+//Aos library animación 
+
+AOS.init({
+    duration: 2500,
+  });
+    
 
 // Formulario
 

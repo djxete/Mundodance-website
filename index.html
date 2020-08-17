@@ -21,6 +21,12 @@
     <!-- Css Propio con local host -->
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- Aos library animación -->
+    <link rel="stylesheet" href="css/animacionAos.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    
+
 
     <title>MundoDance</title>
 
@@ -116,7 +122,7 @@
 
         <div class="sesiones__general">
 
-            <section class="section__sesiones">
+            <section class="section__sesiones" data-aos="fade-down" >
 
                 <img class="section__sesiones__img" src="img/imagen_djChete.jpeg" alt="dj xete">
                 <div class="section__sesiones__div">
@@ -136,7 +142,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section__sesiones">
+            <section class="section__sesiones" data-aos="fade-down" >
 
                 <img src="img/djfarru.jpeg" alt="dj farru">
                 <div class="section__sesiones__div">
@@ -157,7 +163,7 @@
                 </div>
 
             </section>
-            <section class="section__sesiones">
+            <section class="section__sesiones" data-aos="fade-down" >
 
                 <img src="img/djmorales.jpeg" alt="dj morales">
 
@@ -189,8 +195,8 @@
     <!-- SECTION CONTRATA A UN DJ  -->
 
     <section class="section__contratadj">
-        <div class="section__contratadj-div">
-            <div class="section__contratadj-div-div">
+        <div class="section__contratadj-div" data-aos="slide-right">
+            <div class="section__contratadj-div-div" >
                 <h4 class="section__contratadj-div-div-h4">contrata a un dj </h4>
                 <p class="section__contratadj-div-div-p">¿Te gustaría contratar a un dj para que tu fiesta sea un día inolvidable? Musicón dance garantizado 100%. No lo dudes. ¡Contáctanos!
                 </p>
@@ -232,7 +238,7 @@
     </section>
 
     <div class="article__general__blog">
-        <article class="container article__blog">
+        <article class="container article__blog" data-aos="zoom-in">
             <div class="article__div">
                 <img class="article__div-img" src="img/header.jpg" alt="imagen article" title="imagen article">
             </div>
@@ -245,7 +251,7 @@
 
             </div>
         </article>
-        <article class="container article__blog">
+        <article class="container article__blog" data-aos="zoom-in">
             <div class="article__div">
                 <img class="article__div-img" src="img/header2.jpg" alt="imagen article" title="imagen article">
             </div>
@@ -288,6 +294,8 @@
     </footer>
 
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Javascript -->
     <script src="js/main.js"></script>
 

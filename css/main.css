@@ -1347,7 +1347,7 @@ footer {
 .sectionBlog1__div2-p{
     font-size: calc(1em + 1vw);
     line-height: 2;
-    padding: 1.4rem;
+    padding: 1.4rem 0 1.2rem;
 }
 .sectionBlog1__div3-p{
     font-size: calc(1em + 1vw);
@@ -1356,19 +1356,32 @@ footer {
     text-decoration:underline rgb(75, 218, 253);
 
 }
-.sectionBlog1__div3-div{
+.sectionBlog1__div3{
     display: flex;
     justify-content:center;
-    padding: 1.4rem;
+    
+    
+}
 
+.sectionBlog1__div3-a{
+    background-color: #2788f7;
+    border-radius: 5%;
+    color: #ffffff;
+    font-size: calc(0.4rem + 1vw + 1vh);
+    text-align: center;
+    text-transform: uppercase;
+    padding: calc(0.6em + 1vw + 1vh);
+    margin: 0 1rem 2.4rem;
+    
 }
-.sectionBlog1__div3-div-p{
-    font-size: calc(0.8em + 1vw + 1vh);
+.sectionBlog1__div3-a:hover{
+    background-color: #0075ff;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    
 }
-.sectionBlog1__div3-div-i{
-    font-size: calc(0.8em + 1vw + 1vh);
-    padding: 0 2rem;
-}
+
 
 
 /*---- página blog2.html ------*/
@@ -1830,6 +1843,16 @@ footer {
             width: 100%;
             justify-content: space-evenly;
         }
+
+         /* página blog1.html*/
+
+         .sectionBlog1__div3-a{
+           
+            font-size: calc(0.2rem + 1vw + 1vh);
+           padding: calc(0.4em + 1vw + 1vh);
+            
+         }        
+
     
     
 
@@ -2383,8 +2406,21 @@ font-size:calc(0.7em + 1vw);
     margin-top: 0;
     margin-bottom: 0;
    
-
 }
+
+.sectionBlog1__div2-p{
+    
+    padding: 2rem 0 5rem;
+}
+
+.sectionBlog1__div3-a{
+           
+    font-size: calc(0.1rem + 1vw + 1vh);
+   padding: calc(0.1em + 1vw + 1vh);
+   margin: 0 2rem 6rem;
+    
+ }        
+
 
 
 }
@@ -2577,13 +2613,23 @@ font-size:calc(0.7em + 1vw);
       /*---- página blog1.html ------*/
 
 
+    /* página blog1.html*/
+
     .sectionBlog1{
-       
-        margin-top: 0;
+        
         margin-bottom: 0;
        
-    
     }
+
+    .sectionBlog1__div3-a{
+           
+        font-size: calc(0.1rem + 1vw + 1vh);
+       padding: calc(0.1em + 1vw + 1vh);
+       margin: 0 2rem 3.5rem;
+
+        
+     }        
+
 
 
 
