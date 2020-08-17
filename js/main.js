@@ -12,6 +12,20 @@ let nav2 = document.querySelectorAll(".navigation__iQ")[0];
     enlacesHeader.classList.toggle("menudos");
 });
 
+// Animaciones páginas blog1 y blog2
+
+window.addEventListener("scroll", function(){
+
+    let animacion = document.getElementById("animado");
+    let posicionObj1 = animacion.getBoundingClientRect().top;
+    console.log(posicionObj1);
+    let tamañoDePantalla = window.innerHeight/3.5;
+
+    if(posicionObj1 < tamañoDePantalla){
+        animacion.style.animation = 2
+    }
+})
+
 
 
 // Formulario

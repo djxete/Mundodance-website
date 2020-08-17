@@ -926,6 +926,7 @@ footer {
 
 /*---- página sesiones.html ------*/
 
+
 .navigation__iQ {
     position: relative;
     color: #ffffff;
@@ -1305,9 +1306,72 @@ footer {
 }
 
 
+/*---- página blog1.html ------*/
+
+
+.h3Blog1 {
+
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3.5rem;
+    text-align: center;
+    font-size: calc(0.5em + 2vw + 1vh);
+    
+}
+.h3Blog1::after{
+    display: none;
+}
 
 
 
+.sectionBlog1{
+    background-color: rgba(75, 217, 253, 0.247);
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+
+}
+.sectionBlog1__div{
+    margin: 0.5rem auto;
+    width: 50%;
+
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+.sectionBlog1__div2{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.sectionBlog1__div2-p{
+    font-size: calc(1em + 1vw);
+    line-height: 2;
+    padding: 1.4rem;
+}
+.sectionBlog1__div3-p{
+    font-size: calc(1em + 1vw);
+    font-weight: 500;
+    text-align: center;
+    text-decoration:underline rgb(75, 218, 253);
+
+}
+.sectionBlog1__div3-div{
+    display: flex;
+    justify-content:center;
+    padding: 1.4rem;
+
+}
+.sectionBlog1__div3-div-p{
+    font-size: calc(0.8em + 1vw + 1vh);
+}
+.sectionBlog1__div3-div-i{
+    font-size: calc(0.8em + 1vw + 1vh);
+    padding: 0 2rem;
+}
+
+
+/*---- página blog2.html ------*/
 
 
 /*-----------------------------MEDIA QUERIES----------------------------*/
@@ -2297,9 +2361,30 @@ font-size:calc(0.7em + 1vw);
     }
 
 
+ /*---- página blog1.html ------*/
 
+ .h3Blog1 {
 
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3.5rem;
+    text-align: center;
+    font-size: calc(0.5em + 2vw + 1vh);
+    
+}
 
+.h3Blog1::after{
+    display: none;
+}
+
+ .sectionBlog1{
+    background-color: rgba(75, 217, 253, 0.247);
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+
+}
 
 
 }
@@ -2489,7 +2574,16 @@ font-size:calc(0.7em + 1vw);
         grid-template-columns: repeat(7, 1fr);
     }
 
+      /*---- página blog1.html ------*/
 
+
+    .sectionBlog1{
+       
+        margin-top: 0;
+        margin-bottom: 0;
+       
+    
+    }
 
 
 
