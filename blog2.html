@@ -18,11 +18,12 @@
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
 
-    <!-- Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <!-- Css Propio con local host -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Aos library animación -->
+    <link rel="stylesheet" href="css/animacionAos.css"/>
 
 
     <title>MundoDance</title>
@@ -85,37 +86,15 @@
 
     <section class="section sectionBlog1">
         <h3 class="h3Blog1 container">EL NUEVO REMEMBER</h3>
-        <div class="sectionBlog1__div animate__animated animate__backInDown">
+        <div class="sectionBlog1__div" data-aos="fade-down">
             <img src="./img/blog2.svg" alt="icono blog1" id="animado">
         </div>
-        <div class="sectionBlog1__div2">
-            <p class="sectionBlog1__div2-p">Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen..Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen.
-                Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen..Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen..Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen..Mundodance nace de la idea de que viajemos al pasado recordando las mejores
-                sesiones remember y poky que mas nos hicieron bailar en el pasado. Sesiones que no dejarás de bailar
-                pasen los años que pasen.</p>
+        <div class="sectionBlog1__div2" data-aos="zoom-in">
+            <p class="sectionBlog1__div2-p">Mucho se habla del resurgimiento del estilo progresivo-cantado 😯 Cada vez mas deejays optan por recordar aquellos buenos tiempos pinchando cantaditas con progresivo. Desde mi punto de vista no creo que sea un estilo que logre penetrar en las cabezas de las personas para que se ponga en las salas de fiesta 🤷‍♂️ Personalmente, a mi los progresivos y los cantados me gusta pincharlos con poky y hardhouse 😎 Considero que el poky y el hardhouse le meten la fuerza necesario para que no dejes de bailar 💪 Creo que el pinchar cantaditas con progresivo desacelera el ritmo frenético que siempre ha tenido este estilo. Sinceramente lo veo bien para estar en una terraza tomando algo tranquilamente. Pero cuando se refiere a pincharlo en una sala, necesita de una dureza que solo el poky y el hardhouse te lo dan 👊 Y últimamente también está surgiendo el denominado cantado-techno ✍ La verdad que como he dicho antes, me parece un estilo mas propio de escuchar en una terraza chill-out que en una sala. Firmado: <i class="sectionBlog1__div2-p-i">dj xete</i></p>
         </div>
-        <!-- <div class="sectionBlog1__div3">
-            <p class="sectionBlog1__div3-p">¿ Te ha gustado ?</p>
-            <div class="sectionBlog1__div3-div">
-                <p class="sectionBlog1__div3-div-p">0</p>
-                <i class="far fa-thumbs-up sectionBlog1__div3-div-i"></i>
-                <i class="far fa-thumbs-down sectionBlog1__div3-div-i"></i>
-                <p class="sectionBlog1__div3-div-p">0</p>
-            </div>
-        </div> -->
+       
         <div class="sectionBlog1__div3">
             <a href="blog1.html" class="sectionBlog1__div3-a">blog anterior</a>
-            <a href="#" class="sectionBlog1__div3-a">blog siguiente</a>
         </div>
 
     </section>
@@ -149,7 +128,8 @@
 
     </footer>
 
-
+<!-- Aos library animación javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> <script> AOS.init({ duration: 2000, }); </script>
 
     <!-- Javascript -->
     <script src="js/main.js"></script>

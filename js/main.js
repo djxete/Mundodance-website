@@ -1,4 +1,4 @@
-// Menu desplegable
+//----------- Menu desplegable
 
 let enlacesHeader = document.querySelectorAll(".enlaces-header")[0];
 let nav1 = document.querySelectorAll(".navigation__i")[0];
@@ -10,15 +10,24 @@ let nav2 = document.querySelectorAll(".navigation__iQ")[0];
 });
 
 
+//---------- Blog1 y blog2
 
-//Aos library animación 
+// let blog1 = window.location.href;
+// let blog2 = window.location.href;
+// console.log(blog2)
 
-AOS.init({
-    duration: 2500,
-  });
-    
+// if( blog1 = "http://localhost/pagina%20mundodance/blog1.html"){
+//     document.getElementById("blog1").style.background = "grey";
+//     document.getElementById("blog1").style.color = "grey";
 
-// Formulario
+// }
+
+// if ( blog2 = "http://localhost/pagina%20mundodance/blog2.html"){
+//         document.getElementById("blog2").style.background = "grey";
+//         document.getElementById("blog2").style.color = "grey";
+//     }
+
+//---------- Formulario
 
 
 const formulario = document.getElementById("myForm");
@@ -104,10 +113,10 @@ inputs.forEach((input) => {
 
 
 
-// Validar formulario
 
 
 
+//------------ Validar formulario
 
 
 //formulario.addEventListener("submit", (e) => {
@@ -143,9 +152,6 @@ inputs.forEach((input) => {
 
                 document.querySelector(".formulario__mensaje-p").classList.add("formulario__mensaje-p-activo");
 
-               
-
-                
 
                 // setTimeout(() => {
                 //     document.querySelector(".formulario__mensaje-p").classList.remove("formulario__mensaje-p-activo");

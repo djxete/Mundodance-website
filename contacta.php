@@ -24,9 +24,6 @@
     <link rel="stylesheet" href="css/main.css">
 
  
-    
-    
-
     <title>MundoDance</title>
 
    
@@ -34,6 +31,8 @@
 </head>
 
 <body>
+
+ <!-- PHP  -->
 
  <?php
 
@@ -50,6 +49,10 @@ $terminos = $_POST["terminos"];
 }
 
 ?> 
+
+
+ <!-- HEADER  -->
+
     <div class="header-parallaxQ">
 
         <header class="headerQ">
@@ -81,7 +84,7 @@ $terminos = $_POST["terminos"];
                 <a href="index.html">Inicio</a>
                 <a href="quienessomos.html">quienes somos</a>
                 <a href="sesiones.html">sesiones</a>
-                <a href="contacta.html">contacta</a>
+                <a href="contacta.php">contacta</a>
             </div>
 
         </header>
@@ -89,6 +92,9 @@ $terminos = $_POST["terminos"];
 
     </div> <!-- header-parallax-->
 
+
+
+     <!-- FORMULARIO  -->
 
 
     <section class="section">
@@ -180,12 +186,11 @@ $terminos = $_POST["terminos"];
             
             </form>
             
-            
-
-            
-
 
     </main>
+
+
+     <!-- FOOTER  -->
 
 
 
@@ -213,7 +218,7 @@ $terminos = $_POST["terminos"];
     </footer>
 
 
-
+<!-- Javascript -->
     <script src="js/main.js"></script>
     
 
