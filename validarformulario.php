@@ -9,7 +9,7 @@ if(isset($_POST['submit'])) {
     $apellidos = $_POST["apellidos"];
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
-    $terminos = $_POST["terminos"];
+    // $terminos = $_POST["terminos"];
    
 
 
@@ -42,11 +42,12 @@ if(isset($_POST['submit'])) {
     //     }
     // }
    
-    }if(!(isset($terminos) && $terminos == '1')) {
+   }
+//    if(!(isset($terminos) && $terminos == '1')) {
 
-        echo "<p class='error'> Debes aceptar las condiciones </p>";
+//         echo "<p class='error'> Debes aceptar las condiciones </p>";
 
-} 
+// } 
 
 else {
 

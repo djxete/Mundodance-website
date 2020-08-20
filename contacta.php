@@ -112,7 +112,7 @@ $terminos = $_POST["terminos"];
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="form__label">Nombre:</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" placeholder="Tu nombre" class="form__input" id="form__label-name" name="nombre" value="<?php if(isset($nombre)) echo $nombre ?>">
+                    <input type="text" placeholder="Campo obligatorio" class="form__input" id="form__label-name" name="nombre" value="<?php if(isset($nombre)) echo $nombre ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">El nombre solo puede contener letras,espacios en blanco y como mínimo 4 caracteres</p>
@@ -122,7 +122,7 @@ $terminos = $_POST["terminos"];
             <div class="formulario__grupo"  id="grupo__apellidos">
                 <label for="apellidos" class="form__label">Apellidos:</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" placeholder="Tus apellidos" class="form__input" id="form__label-surname"
+                    <input type="text" placeholder="Campo obligatorio" class="form__input" id="form__label-surname"
                         name="apellidos" value="<?php if(isset($apellidos)) echo $apellidos ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
@@ -134,7 +134,7 @@ $terminos = $_POST["terminos"];
             <div class="formulario__grupo" id="grupo__correo">
                 <label for="correo" class="form__label">Email:</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" placeholder="correo@correo.com" class="form__input" id="form__label-email"
+                    <input type="text" placeholder="Campo obligatorio" class="form__input" id="form__label-email"
                         name="correo" value="<?php if(isset($correo)) echo $correo ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
@@ -147,7 +147,7 @@ $terminos = $_POST["terminos"];
             <div class="formulario__grupo" id="grupo__telefono">
                 <label for="telefono" class="form__label">Teléfono móvil:</label>
                 <div class="formulario__grupo-input">
-                    <input type="tel" placeholder="Tu teléfono" class="form__input" id="form__label-telefono"
+                    <input type="tel" placeholder="Campo obligatorio" class="form__input" id="form__label-telefono"
                         name="telefono" value="<?php if(isset($telefono)) echo $telefono ?>">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
@@ -155,28 +155,29 @@ $terminos = $_POST["terminos"];
             </div>
             
             <!--Campo tipo de sesión-->
-            <label for="sesión" class="form__label">Tipo de sesión</label>
-            <select class="form__select">
-                <option value="Remember" class="form__select-option">Remember</option>
-                <option value="Actual" class="form__select-option">Actual</option>
-                <option value="Bumping" class="form__select-option">Bumping</option>
-            </select>
-            
+            <div class="formulario__grupo" id="grupo__sesion">
+                <label for="sesión" class="form__label">Tipo de sesión</label>
+                <select class="form__select">
+                    <option value="Remember" class="form__select-option">Remember</option>
+                    <option value="Actual" class="form__select-option">Actual</option>
+                    <option value="Bumping" class="form__select-option">Bumping</option>
+                 </select>
+            </div>
             <!--Campo términos y condiciones-->
-            <div class="formulario__grupo" id="grupo__terminos">
+            <!-- <div class="formulario__grupo" id="grupo__terminos">
                 <label class="formulario__label">
                     <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" value="1">
                     <p class="formulario__checkbox-p">Acepto los términos y condiciones</p>
                 </label>
-            </div>
+            </div> -->
             
             <!--Mensaje error-->
-            <div class="formulario__mensaje" id="formulario__mensaje">
+            <!-- <div class="formulario__mensaje" id="formulario__mensaje">
                 <p class="formulario__mensaje-p"><i class="fas fa-exclamation-triangle"></i><b> Error:</b> Por favor rellene el formulario
                     correctamente </p>
             
             </div>
-            
+             -->
             
             <!--Botón-->
             <button type="submit" class="form__btn" name="submit">Enviar</button>
